@@ -19,7 +19,7 @@ function Herramientas() {
           backgroundImage: `url('/img/tech.webp')`,
         }}
       />
-      npm ru
+
       {/* Contenedor principal */}
       <div className="container md:px-4 mx-auto flex flex-col justify-center items-center gap-16">
         {/* Contenedor texto arriba */}
