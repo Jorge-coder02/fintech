@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import Button from "../ui/Buttons/Button";
+// import Button from "../ui/Buttons/Button";
 import Button2 from "../ui/Buttons/Button2.styles";
 import ItemHerramienta from "../ui/ItemHerramienta";
 import IconSetting from "../ui/Icons/IconSetting";
@@ -19,7 +19,7 @@ function Herramientas() {
           backgroundImage: `url('/img/tech.webp')`,
         }}
       />
-
+      npm ru
       {/* Contenedor principal */}
       <div className="container md:px-4 mx-auto flex flex-col justify-center items-center gap-16">
         {/* Contenedor texto arriba */}
