@@ -1,4 +1,4 @@
-import Button from "../ui/Buttons/Button";
+import Button2 from "../ui/Buttons/Button.styles";
 
 function Hero() {
   return (
@@ -25,7 +25,7 @@ function Hero() {
           <div className="self-start pt-10 pl-2 relative">
             {/* *Visual cuadrado* */}
             <div className="absolute -z-20 md:top-[9.5rem] left-9 w-40 h-40 rotate-45 bg-[#085b69] opacity-10 -translate-y-10"></div>
-            <Button>Empezar</Button>
+            <Button2 variant={"primary"}>Empezar</Button2>
           </div>
         </div>
         {/* Contenedor imagen (der) */}

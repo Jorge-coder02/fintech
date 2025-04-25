@@ -1,6 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-// import Button from "../ui/Buttons/Button";
-import Button2 from "../ui/Buttons/Button2.styles";
+import Button from "../ui/Buttons/Button.styles";
 import ItemHerramienta from "../ui/ItemHerramienta";
 import IconSetting from "../ui/Icons/IconSetting";
 import IconChart from "../ui/Icons/IconChart";
@@ -29,8 +27,9 @@ function Herramientas() {
             data-aos-duration="600"
             className="font-bold text-4xl text-center"
           >
-            Aprovecha nuestras herramientas más{" "}
-            <strong className="text-[#056573]">avanzadas</strong>
+            Aprovecha nuestras{" "}
+            <strong className="font-extrabold">herramientas</strong> más{" "}
+            <strong className="text-[#05a69f]">avanzadas</strong>
           </h2>
           <span
             data-aos="fade-right"
@@ -42,7 +41,9 @@ function Herramientas() {
             crecimiento de tu portafolio en tiempo real
           </span>
           <div data-aos="fade-up" data-aos-delay="650">
-            <Button2 variant="secondary">Empezar</Button2>
+            <Button enlace="/" variant="secondary">
+              Empezar
+            </Button>
           </div>
         </div>
         {/* Contenedor blanco abajo */}
