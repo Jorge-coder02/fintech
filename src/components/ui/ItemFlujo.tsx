@@ -3,10 +3,15 @@ interface ItemFlujoProps {
   titulo: string;
   texto1: string;
   texto2?: string;
+  delay?: number;
 }
-function ItemFlujo({ icono, titulo, texto1, texto2 }: ItemFlujoProps) {
+function ItemFlujo({ delay, icono, titulo, texto1, texto2 }: ItemFlujoProps) {
   return (
-    <div className="flex-1 flex flex-col items-center min-h-[180px]">
+    <div
+      data-aos="fade-right"
+      data-aos-delay={delay?.toString()}
+      className="flex-1 flex flex-col items-center min-h-[180px]"
+    >
       {/* Bloque superior (icono + título) */}
       <div className="flex flex-col gap-y-2 items-center h-[120px]">
         {icono}

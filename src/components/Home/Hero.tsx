@@ -1,4 +1,4 @@
-import Button2 from "../ui/Buttons/Button.styles";
+import Button from "../ui/Buttons/Button.styles";
 
 function Hero() {
   return (
@@ -10,8 +10,19 @@ function Hero() {
         {/* Contenedor texto (izq) */}
         <div className="flex w-4/5 md:w-3/5 flex-col justify-center gap-y-8">
           <div className="space-y-3">
-            <h2 className="font-bold text-5xl">Comienza a invertir hoy</h2>
-            <h3 className="font-semibold text-3xl">
+            <h2
+              data-aos="fade-right"
+              data-aos-duration={"600"}
+              className="font-bold text-5xl"
+            >
+              Comienza a invertir hoy
+            </h2>
+            <h3
+              data-aos="fade-right"
+              data-aos-delay={"300"}
+              data-aos-duration={"500"}
+              className="font-semibold text-3xl"
+            >
               Empieza a gestionar tus inversiones
             </h3>
           </div>
@@ -25,7 +36,7 @@ function Hero() {
           <div className="self-start pt-10 pl-2 relative">
             {/* *Visual cuadrado* */}
             <div className="absolute -z-20 md:top-[9.5rem] left-9 w-40 h-40 rotate-45 bg-[#085b69] opacity-10 -translate-y-10"></div>
-            <Button2 variant={"primary"}>Empezar</Button2>
+            <Button variant={"primary"}>Empezar</Button>
           </div>
         </div>
         {/* Contenedor imagen (der) */}

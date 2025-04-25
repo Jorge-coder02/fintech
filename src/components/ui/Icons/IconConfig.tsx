@@ -11,6 +11,9 @@ function IconConfig({ tamano = "32" }: Props) {
       version="1.1"
       viewBox="0 0 32 32"
       xmlSpace="preserve"
+      fill="none" // Relleno
+      stroke="" // Color trazo
+      strokeWidth="0.5" // Grosor
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
     >

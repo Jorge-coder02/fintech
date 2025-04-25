@@ -41,7 +41,7 @@ const StyledButton = styled.button<StyledButtonProps>`
 
 // * Componente Botón *
 type Props = {
-  enlace: string;
+  enlace?: string;
   children: React.ReactNode;
   variant?: "primary" | "secondary" | "tertiary";
 };
