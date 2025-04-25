@@ -1,6 +1,8 @@
+import LineaGrafico from "../ui/LineaGrafico";
 function Resultados() {
   return (
-    <section className="min-h-[100dvh] lg:px-20 p-4 pt-10 flex justify-center items-center">
+    <section className="relative min-h-[100dvh] lg:px-20 p-4 pt-10 flex justify-center items-center">
+      <LineaGrafico></LineaGrafico>
       <div
         className="container flex lg:p-12 p-6 lg:flex-row flex-col justify-center items-center 
         gap-x-16 gap-y-14 max-w-screen-xl"

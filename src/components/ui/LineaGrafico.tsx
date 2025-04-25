@@ -2,7 +2,7 @@ function LineaGrafico() {
   return (
     <>
       {/* *Visual* Línea gráfico */}
-      <div className="absolute -z-20 inset-0 overflow-hidden opacity-15">
+      <div className="hidden lg:block absolute -z-20 inset-0 overflow-hidden opacity-20">
         <svg
           className="w-full h-full"
           viewBox="0 0 1200 800"

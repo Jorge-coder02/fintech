@@ -1,7 +1,7 @@
 type Props = {
-  tamano: string;
+  tamano?: string;
 };
-function IconMoney({ tamano }: Props) {
+function IconMoney({ tamano = "32" }: Props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
