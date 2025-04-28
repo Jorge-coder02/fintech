@@ -1,0 +1,12 @@
+export { default as IconAutomatic } from "./IconAutomatic";
+export { default as IconChart } from "./IconChart";
+export { default as IconConfig } from "./IconConfig";
+export { default as IconMoney } from "./IconMoney";
+export { default as IconRegister } from "./IconRegister";
+export { default as IconResults } from "./IconResults";
+export { default as IconRightArrow } from "./IconRightArrow";
+export { default as IconSetting } from "./IconSetting";
+export { default as XIcon } from "./Social/XIcon";
+export { default as FacebookIcon } from "./Social/FacebookIcon";
+export { default as InstagramIcon } from "./Social/InstagramIcon";
+export { default as LinkednIcon } from "./Social/LinkednIcon";

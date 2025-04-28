@@ -1,8 +1,6 @@
 import Button from "../ui/Buttons/Button.styles";
+import { IconSetting, IconChart, IconMoney } from "../ui/Icons";
 import ItemHerramienta from "../ui/ItemHerramienta";
-import IconSetting from "../ui/Icons/IconSetting";
-import IconChart from "../ui/Icons/IconChart";
-import IconMoney from "../ui/Icons/IconMoney";
 
 function Herramientas() {
   return (

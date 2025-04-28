@@ -1,9 +1,12 @@
+import {
+  IconRightArrow,
+  IconConfig,
+  IconAutomatic,
+  IconResults,
+  IconRegister,
+} from "../ui/Icons";
 import ItemFlujo from "../ui/ItemFlujo";
-import IconRightArrow from "../ui/Icons/IconRightArrow";
-import IconConfig from "../ui/Icons/IconConfig";
-import IconAutomatic from "../ui/Icons/IconAutomatic";
-import IconResults from "../ui/Icons/IconResults";
-import IconRegister from "../ui/Icons/IconRegister";
+
 function FlujoDeTrabajo() {
   const aos_duration = 1000;
   const aos_delay = 200;

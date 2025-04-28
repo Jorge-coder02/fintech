@@ -1,9 +1,10 @@
 import { Routes, Route } from "react-router-dom";
 import "./index.css";
-import Home from "./components/layout/Home";
+import Home from "./pages/Home";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Estilos de AOS
 import { useEffect } from "react";
+
 function App() {
   // Animation
   useEffect(() => {
