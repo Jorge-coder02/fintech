@@ -5,7 +5,7 @@ function Header() {
       <div className="container flex justify-between items-center mx-auto md:px-16 px-4 py-4 ">
         {/* Contenedor elementos */}
         <div className="flex items-center space-x-8">
-          <nav className="hidden md:flex space-x-6 hover:[&>a]:opacity-85 [&>a]:font-medium ">
+          <nav className="hidden md:flex justify-center items-center space-x-6 hover:[&>a]:opacity-85 [&>a]:font-medium ">
             <HeaderLink to="/">Inicio</HeaderLink>
             <HeaderLink to="/">Productos</HeaderLink>
             <HeaderLink to="/">Inversiones</HeaderLink>
