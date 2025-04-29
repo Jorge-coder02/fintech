@@ -1,10 +1,10 @@
-import Button from "../ui/Buttons/Button.styles";
+import Button from "../../ui/Buttons/Button.styles";
 
 function Hero() {
   return (
     <section className="md:px-20 flex min-h-[calc(100dvh-70px)] pt-10 justify-center items-center ">
       {/* *Visual* Esquina medio círculo */}
-      <div className="hidden md:block absolute -z-20 -left-28 -top-20 w-64 h-64 rounded-full bg-[#085b69] opacity-100"></div>
+      <div className="hidden md:block absolute -z-20 -left-28 -top-20 w-64 h-64 rounded-full bg-primary opacity-100"></div>
       {/* Container principal */}
       <div className="container md:px-4 mx-auto max-w-5xl flex flex-col md:flex-row items-center gap-8">
         {/* Contenedor texto (izq) */}
@@ -26,24 +26,36 @@ function Hero() {
               Empieza a gestionar tus inversiones
             </h3>
           </div>
-          <span className="text-lg">
+          <span
+            data-aos="fade-right"
+            data-aos-delay={"500"}
+            className="text-lg"
+          >
             Demuestra de lo que eres capaz con nuestra plataforma de inversión
             intuitiva y potente. Toma el control de tus finanzas, sigue el
             crecimiento de tu portafolio en tiempo real y accede a herramientas
             diseñadas para maximizar tu rentabilidad. Empieza hoy y construye el
             futuro financiero que mereces.
           </span>
-          <div className="self-start pt-10 pl-2 relative">
+          <div
+            data-aos="fade-right"
+            data-aos-delay={"700"}
+            className="self-start pt-10 pl-2 relative"
+          >
             {/* *Visual cuadrado* */}
-            <div className="absolute -z-20 md:top-[9.5rem] left-9 w-40 h-40 rotate-45 bg-[#085b69] opacity-10 -translate-y-10"></div>
+            <div className="absolute -z-20 md:top-[9.5rem] left-9 w-40 h-40 rotate-45 bg-primary opacity-10 -translate-y-10"></div>
             <Button variant={"primary"}>Empezar</Button>
           </div>
         </div>
         {/* Contenedor imagen (der) */}
-        <div className="flex w-4/5 md:w-2/5 justify-center items-center">
+        <div
+          data-aos="fade-down"
+          data-aos-delay={"900"}
+          className="flex w-4/5 md:w-2/5 justify-center items-center"
+        >
           <div className="w-full h-full relative">
             {/* *Visual círculo* */}
-            <div className="hidden sm:block absolute -z-20 top-3 left-60 w-24 h-32 rounded-full bg-[#085b69] opacity-80 animate-float"></div>
+            <div className="hidden lg:block absolute -z-20 top-3 left-60 w-24 h-32 rounded-full bg-primary opacity-80 animate-float"></div>
             <img
               className="w-full h-full"
               src="/img/movil_app.png"

@@ -9,10 +9,10 @@ body {
 
 /* Paleta colores */
 h5 {
-  background-color: #6ba3a4;
-  background-color: #05a69f; /* Boton primary */
-  background-color: #056573; /* Boton secondary */
-  background-color: #085b69; /* header */ /* Boton tertiary */
-  background-color: #1c3c55;
-  background-color: #101a1c;
+  background-color: #6ba3a4; /* quaternary */
+  background-color: #05a69f; /* secondary */
+  background-color: #056573; /* tertiary  */
+  background-color: #085b69; /* primary */
+  background-color: #1c3c55; /* quinary */
+  background-color: #101a1c; /* senary */
 }

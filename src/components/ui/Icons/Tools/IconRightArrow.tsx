@@ -1,13 +1,10 @@
 type Props = {
   tamano?: string;
   clases?: string;
-  delay?: number;
 };
-function IconRightArrow({ tamano = "64", clases, delay }: Props) {
+function IconRightArrow({ tamano = "64", clases }: Props) {
   return (
     <svg
-      data-aos="fade-right"
-      data-aos-delay={delay?.toString()}
       width={tamano}
       height={tamano}
       viewBox="0 0 512 512"

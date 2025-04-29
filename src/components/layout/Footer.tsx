@@ -1,6 +1,7 @@
-import ItemFooterLinks from "../ui/ItemFooterLinks";
-import ItemFooterSocials from "../ui/ItemFooterSocials";
-import { XIcon, FacebookIcon, InstagramIcon, LinkednIcon } from "../ui/Icons";
+// ItemFooterLinks.tsx: Componente que renderiza una lista de enlaces con un título.
+// ItemFooterNavSocials.tsx: Componente que renderiza exclusivamente los enlaces de redes sociales en el footer.
+import ItemFooterLinks from "../Home/ui/ItemFooterLinks";
+import ItemFooterNavSocials from "../Home/ui/ItemFooterNavSocials";
 function Footer() {
   // Enlaces columna 1 *Compañía*
   const enlaces1 = {
@@ -30,29 +31,7 @@ function Footer() {
       <ItemFooterLinks titulo="Compañía" enlaces={enlaces1}></ItemFooterLinks>
       <ItemFooterLinks titulo="Ayuda" enlaces={enlaces2}></ItemFooterLinks>
       <ItemFooterLinks titulo="Educación" enlaces={enlaces3}></ItemFooterLinks>
-      <nav className="flex flex-col justify-center items-center py-4 gap-y-4">
-        <h2 className="text-xl font-bold underline decoration-[#05a69f] decoration-2 underline-offset-8">
-          Síguenos
-        </h2>
-        <div className="flex justify-center gap-x-4">
-          <ItemFooterSocials
-            clases="bg-[#05a69f] hover:bg-[#0a7b7d]"
-            icono={<XIcon />}
-          ></ItemFooterSocials>
-          <ItemFooterSocials
-            clases="bg-[#05a69f] hover:bg-[#0a7b7d]"
-            icono={<FacebookIcon />}
-          ></ItemFooterSocials>
-          <ItemFooterSocials
-            clases="bg-[#05a69f] hover:bg-[#0a7b7d]"
-            icono={<InstagramIcon />}
-          ></ItemFooterSocials>
-          <ItemFooterSocials
-            clases="bg-[#05a69f] hover:bg-[#0a7b7d]"
-            icono={<LinkednIcon />}
-          ></ItemFooterSocials>
-        </div>
-      </nav>
+      <ItemFooterNavSocials></ItemFooterNavSocials>
     </footer>
   );
 }

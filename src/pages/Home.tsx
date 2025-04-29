@@ -1,8 +1,8 @@
 import Layout from "../components/layout/Layout";
-import Hero from "../components/Home/Hero";
-import Herramientas from "../components/Home/Herramientas";
-import Resultados from "../components/Home/Resultados";
-import FlujoDeTrabajo from "../components/Home/FlujoDeTrabajo";
+import Hero from "../components/Home/sections/Hero";
+import Herramientas from "../components/Home/sections/Herramientas";
+import Resultados from "../components/Home/sections/Resultados";
+import FlujoDeTrabajo from "../components/Home/sections/FlujoDeTrabajo";
 
 function Home() {
   return (

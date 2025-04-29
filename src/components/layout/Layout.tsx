@@ -8,7 +8,7 @@ function Layout({ children }: Props) {
   return (
     <div>
       <Header></Header>
-      {children}
+      {children} {/* Contenido página */}
       <Footer></Footer>
     </div>
   );

@@ -48,6 +48,8 @@ type Props = {
 const Button2 = ({ enlace = "/", children, variant = "primary" }: Props) => {
   return (
     <StyledButton onClick={(e) => e.preventDefault()} $variant={variant}>
+      {" "}
+      {/* e.preventDefault es sólo un ejemplo de lógica que puedo manejar */}
       <Link to={enlace || "/"}>{children}</Link>
     </StyledButton>
   );

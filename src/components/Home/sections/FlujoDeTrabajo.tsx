@@ -4,7 +4,7 @@ import {
   IconAutomatic,
   IconResults,
   IconRegister,
-} from "../ui/Icons";
+} from "../../ui/Icons";
 import ItemFlujo from "../ui/ItemFlujo";
 
 function FlujoDeTrabajo() {
@@ -13,7 +13,7 @@ function FlujoDeTrabajo() {
   return (
     <section
       className="min-h-[45dvh] flex flex-col justify-center items-center mt-20 mb-40 lg:px-20 p-4 
-    bg-[#056573] text-[#fff]"
+    bg-tertiary text-text_primary"
     >
       {/* Contenedor principal */}
       <div
@@ -50,11 +50,12 @@ function FlujoDeTrabajo() {
             texto2="Conectas tus cuentas"
           ></ItemFlujo>
           {/* Flecha ➡ */}
-          <div className="flex justify-center items-center">
-            <IconRightArrow
-              delay={aos_delay + 1200}
-              clases="rotate-90 lg:rotate-0 transform origin-center"
-            ></IconRightArrow>
+          <div
+            data-aos="fade-right"
+            data-aos-delay={aos_delay + 1200}
+            className="flex justify-center items-center"
+          >
+            <IconRightArrow clases="rotate-90 lg:rotate-0 transform origin-center"></IconRightArrow>
           </div>
           <ItemFlujo
             delay={aos_delay + 1600}

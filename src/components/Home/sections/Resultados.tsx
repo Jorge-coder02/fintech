@@ -23,7 +23,11 @@ function Resultados() {
             <h4 className="text-xl font-medium">
               Ventajas que marcan la diferencia
             </h4>
-            <div className="text-lg leading-snug">
+            <div
+              data-aos="fade-right"
+              data-aos-delay="400"
+              className="text-lg leading-snug"
+            >
               <p className="pb-3">
                 En nuestra plataforma, combinamos inteligencia artificial y
                 análisis de mercado para maximizar tus rendimientos.
@@ -38,7 +42,11 @@ function Resultados() {
           </div>
         </div>
         {/* Contenedor img (der.) */}
-        <div className="flex flex-1 justify-center items-center">
+        <div
+          data-aos="fade-right"
+          data-aos-delay="800"
+          className="flex flex-1 justify-center items-center"
+        >
           <div className="w-full max-w-sm lg:max-w-md">
             <img src="/img/ia_chart.png" alt="movil" />
           </div>

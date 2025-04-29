@@ -1,10 +1,10 @@
-import Button from "../ui/Buttons/Button.styles";
-import { IconSetting, IconChart, IconMoney } from "../ui/Icons";
+import Button from "../../ui/Buttons/Button.styles";
+import { IconSetting, IconChart, IconMoney } from "../../ui/Icons";
 import ItemHerramienta from "../ui/ItemHerramienta";
 
 function Herramientas() {
   return (
-    <section className="relative bg-[#000000db] text-[#fff] md:px-20 flex min-h-[100dvh] py-20 md:py-40 justify-center items-center ">
+    <section className="relative bg-[#000000d3] lg:bg-[#000000db] text-text_primary md:px-20 flex min-h-[100dvh] py-20 md:py-40 justify-center items-center ">
       {/* Imagen fondo */}
       <div
         className="absolute top-0 left-0 right-0 bottom-0 bg-cover bg-center !opacity-30 
