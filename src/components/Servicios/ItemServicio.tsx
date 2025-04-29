@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 type Props = {
   titulo: string;
   descripcion?: string;
