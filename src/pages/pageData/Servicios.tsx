@@ -5,7 +5,7 @@ import GenericPage from "../GenericPage";
 import ItemServicio from "../../components/Servicios/ItemServicio";
 import Button from "../../components/ui/Buttons/Button.styles";
 
-export const Servicios = () => {
+const Servicios = () => {
   return (
     <GenericPage
       titulo="Nuestros Servicios Fintech"
@@ -62,3 +62,5 @@ export const Servicios = () => {
     </GenericPage>
   );
 };
+
+export default Servicios;

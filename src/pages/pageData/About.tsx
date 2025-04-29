@@ -1,6 +1,6 @@
 import GenericPage from "../GenericPage";
 
-export const About = () => {
+const About = () => {
   return (
     <GenericPage
       titulo="Sobre Nosotros"
@@ -25,3 +25,4 @@ export const About = () => {
     </GenericPage>
   );
 };
+export default About;
