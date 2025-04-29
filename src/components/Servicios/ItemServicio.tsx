@@ -5,8 +5,6 @@ type Props = {
   caracteristica1?: string;
   caracteristica2?: string;
   caracteristica3?: string;
-  caracteristica4?: string;
-  caracteristica5?: string;
 };
 
 function ItemServicio({
@@ -15,8 +13,6 @@ function ItemServicio({
   caracteristica1,
   caracteristica2,
   caracteristica3,
-  caracteristica4,
-  caracteristica5,
 }: Props) {
   return (
     <div className="shadow-xl lg:shadow-md lg:bg-gray-50 p-6 rounded-xl">

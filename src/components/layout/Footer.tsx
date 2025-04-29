@@ -5,7 +5,7 @@ import ItemFooterNavSocials from "../Home/ui/ItemFooterNavSocials";
 function Footer() {
   // Enlaces columna 1 *Compañía*
   const enlaces1 = {
-    "Sobre nosotros": "/sobre_nosotros",
+    "Sobre nosotros": "/about",
     Servicios: "/servicios",
     Compras: "/compras",
     Blog: "/blog",
