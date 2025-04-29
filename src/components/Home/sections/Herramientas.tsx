@@ -49,7 +49,11 @@ function Herramientas() {
         {/* Contenedor blanco abajo */}
         <div className="w-[90%] bg-[#fff] text-gray-700 py-20 xl:pb-36">
           {/* Contenedor herramientas */}
-          <div className="flex flex-col xl:flex-row items-center justify-center gap-y-20">
+          <div
+            data-aos="fade-right"
+            data-aos-delay="900"
+            className="flex flex-col xl:flex-row items-center justify-center gap-y-20"
+          >
             <ItemHerramienta
               icono={<IconSetting tamano="36" />}
               herr_texto="Administra tus configuraciones de forma sencilla con esta herramienta potente y fácil de usar."

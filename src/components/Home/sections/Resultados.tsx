@@ -48,7 +48,12 @@ function Resultados() {
           className="flex flex-1 justify-center items-center"
         >
           <div className="w-full max-w-sm lg:max-w-md">
-            <img loading="lazy" src="/img/ia_chart.png" alt="movil" />
+            <img
+              className="rounded-lg"
+              loading="lazy"
+              src="/img/ia_chart.png"
+              alt="movil"
+            />
           </div>
         </div>
       </div>

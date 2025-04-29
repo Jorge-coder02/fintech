@@ -3,6 +3,7 @@ import Hero from "../components/Home/sections/Hero";
 import Herramientas from "../components/Home/sections/Herramientas";
 import Resultados from "../components/Home/sections/Resultados";
 import FlujoDeTrabajo from "../components/Home/sections/FlujoDeTrabajo";
+import Configuracion from "../components/Home/sections/Configuracion";
 
 function Home() {
   return (
@@ -11,6 +12,7 @@ function Home() {
       <Herramientas></Herramientas>
       <Resultados></Resultados>
       <FlujoDeTrabajo></FlujoDeTrabajo>
+      <Configuracion></Configuracion>
     </Layout>
   );
 }

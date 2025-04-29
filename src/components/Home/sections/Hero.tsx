@@ -34,8 +34,7 @@ function Hero() {
             Demuestra de lo que eres capaz con nuestra plataforma de inversión
             intuitiva y potente. Toma el control de tus finanzas, sigue el
             crecimiento de tu portafolio en tiempo real y accede a herramientas
-            diseñadas para maximizar tu rentabilidad. Empieza hoy y construye el
-            futuro financiero que mereces.
+            diseñadas para maximizar tu rentabilidad.
           </span>
           <div
             data-aos="fade-right"

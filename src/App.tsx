@@ -1,9 +1,14 @@
 import { Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
 import "./index.css";
-import Home from "./pages/Home";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Estilos de AOS
-import { useEffect } from "react";
+
+// Pages
+import Home from "./pages/Home";
+import { About } from "./pages/pageData/About";
+import { Servicios } from "./pages/pageData/Servicios";
+// import NotFound from "./pages/NotFound";
 
 function App() {
   // Animation
@@ -29,6 +34,8 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/servicios" element={<Servicios />} />
       {/* <Route path="*" element={<NotFound />} />  */}
     </Routes>
   );

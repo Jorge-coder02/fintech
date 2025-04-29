@@ -12,7 +12,7 @@ function XIcon({ tamano = "24" }: Props) {
       stroke="currentColor"
       strokeWidth="2"
       strokeLinecap="round"
-      stroke-Linejoin="round"
+      strokeLinejoin="round"
       className="icon icon-tabler icons-tabler-outline icon-tabler-brand-x"
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />

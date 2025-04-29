@@ -12,7 +12,7 @@ function FlujoDeTrabajo() {
   const aos_delay = 200;
   return (
     <section
-      className="min-h-[45dvh] flex flex-col justify-center items-center mt-20 mb-40 lg:px-20 p-4 
+      className="min-h-[45dvh] flex flex-col justify-center items-center  lg:px-20 p-4 
     bg-tertiary text-text_primary"
     >
       {/* Contenedor principal */}

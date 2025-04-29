@@ -13,8 +13,9 @@ function Header() {
         <div className="flex items-center space-x-8">
           <nav className="hidden md:flex justify-center items-center space-x-6 hover:[&>a]:opacity-85 [&>a]:font-medium ">
             <HeaderLink to="/">Inicio</HeaderLink>
-            <HeaderLink to="/">Productos</HeaderLink>
-            <HeaderLink to="/">Inversiones</HeaderLink>
+            <HeaderLink to="/about">Sobre nosotros</HeaderLink>
+            <HeaderLink to="/servicios">Servicios</HeaderLink>
+            <HeaderLink to="/servicios">Inversiones*</HeaderLink>
           </nav>
         </div>
         <div className="flex items-center">
