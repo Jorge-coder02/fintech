@@ -16,18 +16,22 @@ function ItemFooterNavSocials() {
         <ItemFooterSocials
           clases="bg-[#000000] hover:bg-[#2C2C2C]"
           icono={<XIcon />}
+          aria_label="Red social X"
         ></ItemFooterSocials>
         <ItemFooterSocials
           clases="bg-[#1152B2] hover:bg-[#166FE5]"
           icono={<FacebookIcon />}
+          aria_label="Red social Facebook"
         ></ItemFooterSocials>
         <ItemFooterSocials
           clases="bg-[#C13584] hover:bg-[#D84D94]"
           icono={<InstagramIcon />}
+          aria_label="Red social Instagram"
         ></ItemFooterSocials>
         <ItemFooterSocials
           clases="bg-[#1877F2] hover:bg-[#3D8BF2]"
           icono={<LinkednIcon />}
+          aria_label="Red social LinkedIn"
         ></ItemFooterSocials>
       </div>
     </nav>

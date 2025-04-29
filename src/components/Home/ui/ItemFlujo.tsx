@@ -15,7 +15,7 @@ function ItemFlujo({ delay, icono, titulo, texto1, texto2 }: ItemFlujoProps) {
       {/* Bloque superior (icono + título) */}
       <div className="flex flex-col gap-y-2 items-center h-[120px]">
         {icono}
-        <h4 className="text-xl font-semibold">{titulo}</h4>
+        <h3 className="text-xl font-semibold">{titulo}</h3>
       </div>
       {/* Bloque inferior (textos) */}
       <div className="flex flex-col justify-start items-center text-center flex-grow-0">

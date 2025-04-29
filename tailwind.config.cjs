@@ -14,15 +14,16 @@ module.exports = {
       },
       // Colores personalizados
       colors: {
-        primary: "#085b69",
-        secondary: "#05a69f",
-        tertiary: "#056573",
-        quaternary: "#6ba3a4",
-        quinary: "#1c3c55",
-        senary: "#101a1c",
+        // Colores de fondo
+        primary: "#085b69", // Verde oscuro
+        secondary: "#05a69f", // Verde claro
+        tertiary: "#056573", // Verde oscuro
+        quaternary: "#6ba3a4", // Verde claro
+        quinary: "#1c3c55", // Azul oscuro
+        senary: "#101a1c", // Gris oscuro
         // Colores de texto
-        text_primary: "#fff",
-        text_secondary: "#c0c0c0",
+        text_primary: "#fff", // Blanco
+        text_secondary: "#c0c0c0", // Gris claro
       },
     },
   },
