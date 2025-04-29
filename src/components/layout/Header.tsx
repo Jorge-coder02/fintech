@@ -1,5 +1,11 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import { useState } from "react";
+import { LoginModal } from "./LoginModal";
 import { HeaderLink } from "../ui/Buttons/HeaderLink";
+
 function Header() {
+  const [isLoginOpen, setIsLoginOpen] = useState(false);
+
   return (
     <header className="bg-primary text-text_primary shadow-sm sticky top-0 z-50">
       <div className="container flex justify-between items-center mx-auto md:px-16 px-4 py-4 ">
@@ -12,13 +18,22 @@ function Header() {
           </nav>
         </div>
         <div className="flex items-center">
-          <button className="px-4 py-2 rounded-md font-medium">Login</button>
-          <button className="bg-primary-500 text-text_primary px-4 py-2 rounded-md font-medium hover:bg-primary-600">
+          <button
+            onClick={() => setIsLoginOpen(true)}
+            className="text-text_primary px-4 py-2"
+          >
+            Login
+          </button>
+          <button className="text-text_primary px-4 py-2">
             {/* CAMBIAR ** */}
             Registrarse
           </button>
         </div>
       </div>
+      <LoginModal
+        isOpen={isLoginOpen}
+        onClose={() => setIsLoginOpen(false)}
+      ></LoginModal>
     </header>
   );
 }

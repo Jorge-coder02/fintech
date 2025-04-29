@@ -24,6 +24,7 @@ module.exports = {
         // Colores de texto
         text_primary: "#fff", // Blanco
         text_secondary: "#c0c0c0", // Gris claro
+        text_tertiary: "#000000", // Negro
       },
     },
   },

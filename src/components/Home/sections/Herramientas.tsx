@@ -34,9 +34,11 @@ function Herramientas() {
             data-aos-delay="200"
             className="text-lg text-center"
           >
-            Demuestra de lo que eres capaz con nuestra plataforma de inversión
-            intuitiva y potente. Toma el control de tus finanzas, sigue el
-            crecimiento de tu portafolio en tiempo real
+            Demuestra de lo que eres capaz con nuestra plataforma de inversión{" "}
+            <strong className="text-[#05a69f]">intuitiva y potente.</strong>{" "}
+            Toma el control de tus finanzas, sigue el crecimiento de tu
+            portafolio{" "}
+            <strong className="text-[#05a69f]">en tiempo real</strong>.
           </span>
           <div data-aos="fade-up" data-aos-delay="650">
             <Button enlace="/" variant="secondary">
