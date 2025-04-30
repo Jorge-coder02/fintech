@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { LoginModal } from "./LoginModal";
 import { HeaderLink } from "../ui/Buttons/HeaderLink";
+import { MobileMenu } from "./MobileMenu";
 
 function Header() {
   const [isLoginOpen, setIsLoginOpen] = useState(false);
@@ -10,11 +11,13 @@ function Header() {
       <div className="container flex justify-between items-center mx-auto md:px-16 px-4 py-4 ">
         {/* Contenedor elementos */}
         <div className="flex items-center space-x-8">
-          <nav className="hidden md:flex justify-center items-center space-x-6 hover:[&>a]:opacity-85 [&>a]:font-medium ">
+          {/* Menú Hamburguesa (solo en móvil) */}
+          <MobileMenu />
+          <nav className="hidden lg:flex justify-center items-center space-x-6 hover:[&>a]:opacity-85 [&>a]:font-medium ">
             <HeaderLink to="/">Inicio</HeaderLink>
             <HeaderLink to="/about">Sobre nosotros</HeaderLink>
             <HeaderLink to="/servicios">Servicios</HeaderLink>
-            <HeaderLink to="/servicios">Inversiones*</HeaderLink>
+            <HeaderLink to="/inversiones">Inversiones</HeaderLink>
           </nav>
         </div>
         <div className="flex items-center">

@@ -9,7 +9,11 @@ const About = () => {
       texto2="Entendemos muy bien lo que necesitas. Gracias a nuestra experiencia, podemos ofrecerte un 
       servicio de calidad y adaptado a tus necesidades."
       imagen={
-        <img className="rounded-lg shadow-xl" src="/img/about.jpg" alt="alt" />
+        <img
+          className="rounded-lg shadow-xl"
+          src="/img/about.jpg"
+          alt="sobre_nosotros"
+        />
       }
     >
       {/* Contenido específico/extra */}

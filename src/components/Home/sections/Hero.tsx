@@ -10,13 +10,13 @@ function Hero() {
         {/* Contenedor texto (izq) */}
         <div className="flex w-4/5 md:w-3/5 flex-col justify-center gap-y-8">
           <div className="space-y-3">
-            <h2
+            <h1
               data-aos="fade-right"
               data-aos-duration={"600"}
               className="font-bold text-5xl"
             >
               Comienza a invertir hoy
-            </h2>
+            </h1>
             <h3
               data-aos="fade-right"
               data-aos-delay={"300"}

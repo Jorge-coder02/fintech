@@ -49,7 +49,7 @@ function Resultados() {
         >
           <div className="w-full max-w-sm lg:max-w-md">
             <img
-              className="rounded-lg"
+              className="rounded-lg shadow-lg"
               loading="lazy"
               src="/img/ia_chart.png"
               alt="movil"

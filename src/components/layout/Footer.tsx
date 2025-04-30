@@ -27,7 +27,10 @@ function Footer() {
   };
 
   return (
-    <footer className="flex flex-col lg:flex-row lg:justify-evenly justify-center items-center py-8 bg-[#101a1c] text-[#fff]">
+    <footer
+      className="flex flex-col lg:flex-row lg:justify-evenly justify-center items-center py-8 gap-y-4 
+      bg-[#101a1c] text-[#fff]"
+    >
       <ItemFooterLinks titulo="Compañía" enlaces={enlaces1}></ItemFooterLinks>
       <ItemFooterLinks titulo="Ayuda" enlaces={enlaces2}></ItemFooterLinks>
       <ItemFooterLinks titulo="Educación" enlaces={enlaces3}></ItemFooterLinks>

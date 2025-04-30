@@ -16,12 +16,15 @@ const Servicios = () => {
         <img
           className="rounded-lg shadow-xl w-full h-64 object-cover"
           src="/img/servicios.webp"
-          alt="Servicios Fintech"
+          alt="servicios_Fintech"
         />
       }
     >
       {/* Contenido específico para servicios */}
       <div className="flex flex-col gap-y-12 pb-28 lg:px-20 max-w-screen-xl mx-auto">
+        <h2 className="text-4xl font-semibold mx-auto text-center mb-8">
+          Servicios que ofrecemos
+        </h2>
         {/* Servicio 1 */}
         <ItemServicio
           titulo="Inversión Automatizada"

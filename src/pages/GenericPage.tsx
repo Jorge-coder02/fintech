@@ -19,7 +19,7 @@ function GenericPage({
 }: Props) {
   return (
     <Layout>
-      <section className="flex flex-col justify-center min-h-[100dvh] items-center lg:gap-y-10 px-6">
+      <section className="flex flex-col justify-center min-h-[100dvh] items-center lg:gap-y-10 px-6 pt-10 lg:py-0">
         {/* CONTENEDOR PRINCIPAL */}
         <div className="min-h-[100dvh] flex flex-col justify-center items-center pb-40 gap-y-10 lg:gap-y-28">
           {/* Contenedor títulos  */}
