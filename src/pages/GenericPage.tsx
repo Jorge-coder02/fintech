@@ -35,7 +35,7 @@ function GenericPage({
             <span
               data-aos="fade-right"
               data-aos-delay="200"
-              className="text-lg text-center"
+              className="text-xl text-center"
             >
               {subtitulo}
             </span>

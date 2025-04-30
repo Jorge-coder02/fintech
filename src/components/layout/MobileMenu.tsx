@@ -1,11 +1,23 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { HeaderLink } from "../ui/Buttons/HeaderLink";
 
 export function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement | null>(null);
+
+  // Quitar el menú al hacer click fuera de él
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(e.target as Node)) {
+        setIsOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   return (
-    <div className="lg:hidden">
+    <div className="lg:hidden" ref={menuRef}>
       {/* Botón Hamburguesa (igual que antes) */}
       <button
         onClick={() => setIsOpen(!isOpen)}

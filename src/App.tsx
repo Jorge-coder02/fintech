@@ -1,9 +1,11 @@
-import { Routes, Route, ScrollRestoration } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { useEffect, Suspense, lazy } from "react";
 import "./index.css";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Estilos de AOS
 import LoadingSpinner from "./components/ui/Icons/Tools/LoadingSpinner";
+
+import CustomScrollRestoration from "./utility/CustomScrollRestoration";
 
 // Pages
 import PageTitleUpdater from "./utility/PageTitleUpdater";
@@ -16,8 +18,6 @@ const Compras = lazy(() => import("./pages/pageData/Compras"));
 const Blog = lazy(() => import("./pages/pageData/Blog"));
 
 function App() {
-  <ScrollRestoration />; // Resetear scroll al inicio al cambiar de ruta
-
   // Animations
   useEffect(() => {
     AOS.init({
@@ -40,6 +40,7 @@ function App() {
 
   return (
     <>
+      <CustomScrollRestoration /> {/*  Resetear scroll al cambiar ruta */}
       <PageTitleUpdater />
       <Routes>
         <Route path="/" element={<Home />} />
