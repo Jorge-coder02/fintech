@@ -41,7 +41,7 @@ function App() {
   return (
     <>
       <CustomScrollRestoration /> {/*  Resetear scroll al cambiar ruta */}
-      <PageTitleUpdater />
+      <PageTitleUpdater /> {/* Actualizar title al cambiar de ruta */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route

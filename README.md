@@ -1,50 +1,24 @@
-# React + TypeScript + Vite
+# Funcionalidades que tiene la página
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### /Utility
 
-Currently, two official plugins are available:
+- ScrollRestoration:
+  Componente de lógica que fuerza el scroll al inicio (0, 0) al cambiar de ruta.
+  Se utiliza en App.tsx antes de las <Routes>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- PageTitleUpdater:
+  Componente de lógica que actualiza el título de la página al cambiar de ruta.
+  Contiene un objeto con la '/ruta: Título'
 
-## Expanding the ESLint configuration
+### /pages
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- GenericPage:
+  Componente que guarda la estructura/plantilla de una página que posteriormente la usará como _layout_.
+  Esta nueva página que usará la plantilla también podrá añadir nuevo contenido fuera de este Layout.
+  Se utiliza para la generación de múltiples páginas en poco tiempo, guardando una estructura parecida.
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+**AOS**
+**Styled Components**
+**Login Modal**
+**MenuMobile**
+**Figuras flotantes (visuales)**
