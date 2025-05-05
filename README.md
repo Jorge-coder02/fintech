@@ -1,6 +1,6 @@
 # 📌🎨 Growbit (Diseño moderno fintech)
 
-[![Growbit](https://img.shields.io/badge/Status-Complete-green)](https://github.com/Jorge-coder02/fintech)
+[![Status](https://img.shields.io/badge/Status-🚧_In_Progress-FFA500)](https://github.com/Jorge-coder02/fintech)
 [![Licencia](https://img.shields.io/badge/License-MIT-blue)](LICENSE)
 
 🔗 **Visitar:** [Ver en vivo](https://growbit.netlify.app/)
@@ -11,9 +11,9 @@
 
 ## ✨ Características Destacadas
 - ✅ Uso de Styled Components
-- ✅ Optimización automática de imágenes (WebP)
 - ✅ Loading spinner de carga en peticiones al back
 - ✅ Diseño responsive con Tailwind CSS
+- 🟡 Optimización automática de imágenes (WebP) - "*pendiente*"
 
 ## 📦 Instalación
 
