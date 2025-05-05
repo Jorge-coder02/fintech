@@ -18,7 +18,7 @@ export function MobileMenu() {
 
   return (
     <div className="lg:hidden" ref={menuRef}>
-      {/* Botón Hamburguesa (igual que antes) */}
+      {/* Botón Hamburguesa */}
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="text-text_primary focus:outline-none"

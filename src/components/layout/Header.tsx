@@ -13,6 +13,7 @@ function Header() {
         <div className="flex items-center space-x-8">
           {/* Menú Hamburguesa (solo en móvil) */}
           <MobileMenu />
+          {/* Menú (PC) */}
           <nav className="hidden lg:flex justify-center items-center space-x-6 hover:[&>a]:opacity-85 [&>a]:font-medium ">
             <HeaderLink to="/">Inicio</HeaderLink>
             <HeaderLink to="/about">Sobre nosotros</HeaderLink>
@@ -33,6 +34,8 @@ function Header() {
           </button>
         </div>
       </div>
+
+      {/* Login Modal */}
       <LoginModal
         isOpen={isLoginOpen}
         onClose={() => setIsLoginOpen(false)}

@@ -17,8 +17,11 @@
   Esta nueva página que usará la plantilla también podrá añadir nuevo contenido fuera de este Layout.
   Se utiliza para la generación de múltiples páginas en poco tiempo, guardando una estructura parecida.
 
-**AOS**
+### Otros:
+
+**AOS (animaciones)**
 **Styled Components**
 **Login Modal**
-**MenuMobile**
+**MenuMobile (responsive)**
 **Figuras flotantes (visuales)**
+**React Suspense (lazy load de componentes)**
