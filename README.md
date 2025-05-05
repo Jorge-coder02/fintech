@@ -65,10 +65,10 @@ yarn install
 
 # Versiones
 
-- React: 19.0.0
-- Tailwind CSS: 3.4.17
-- Styled Componentes: 6.1.17
-- React Router: 7.5.1
+- React: `19.0.0`
+- Tailwind CSS: `3.4.17`
+- Styled Componentes: `6.1.17`
+- React Router: `7.5.1`
 
 
 ## Dependencias de desarrollo:
@@ -76,7 +76,6 @@ yarn install
 - postcss: `8.3.0`
 - eslint: `9.19.0`
 - vite: `6.1.0`
-
 
 
 # Funcionalidades en detalle
@@ -98,11 +97,12 @@ yarn install
   Esta nueva página que usará la plantilla también podrá añadir nuevo contenido fuera de este Layout.
   Se utiliza para la generación de múltiples páginas en poco tiempo, guardando una estructura parecida.
 
-### Otros:
 
-**AOS (animaciones)**
-**Styled Components**
-**Login Modal**
-**MenuMobile (responsive)**
-**Figuras flotantes (visuales)**
-**React Suspense (lazy load de componentes)**
+### Otras funcionalidades:
+
+**AOS (animaciones)**<br>
+**Styled Components**<br>
+**Login Modal**<br>
+**MenuMobile (responsive)**<br>
+**Figuras flotantes (visuales)**<br>
+**React Suspense (lazy load de componentes)**<br>
