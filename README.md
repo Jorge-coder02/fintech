@@ -1,4 +1,4 @@
-# 📌🎨 Growbit (Diseño moderno fintech)
+# 👩‍💻🏛 Growbit (Diseño moderno fintech)
 
 [![Status](https://img.shields.io/badge/Status-🚧_In_Progress-FFA500)](https://github.com/Jorge-coder02/fintech)
 [![Licencia](https://img.shields.io/badge/License-MIT-blue)](LICENSE)
