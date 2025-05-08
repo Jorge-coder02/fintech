@@ -57,7 +57,7 @@ function Configuracion() {
             <img
               className="rounded-lg "
               loading="lazy"
-              src="/img/configurar.jpg"
+              src="/img/configurar.webp"
               alt="configurar"
             />
           </div>

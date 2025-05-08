@@ -51,7 +51,7 @@ function Resultados() {
             <img
               className="rounded-lg shadow-lg"
               loading="lazy"
-              src="/img/ia_chart.png"
+              src="/img/ia_chart.webp"
               alt="movil"
             />
           </div>
