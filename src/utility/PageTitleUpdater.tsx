@@ -16,7 +16,12 @@ function PageTitleUpdater() {
       "/inversiones": "Inversiones",
       "/compras": "Compras",
       "/blog": "Blog",
-      "/contact": "Contacto",
+      "/contacto": "Contacto",
+      "/cookies": "Política de cookies",
+      "/preguntas": "Preguntas",
+      "/educacion": "Educación",
+      "/ahorro": "Ahorro y presupuesto",
+      "/criptomonedas": "Criptomonedas y Blockchain",
     };
     document.title = `${
       titles[location.pathname as keyof typeof titles] || "Página no encontrada"

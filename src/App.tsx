@@ -16,6 +16,9 @@ const Servicios = lazy(() => import("./pages/pageData/Servicios"));
 const Inversiones = lazy(() => import("./pages/pageData/Inversiones"));
 const Compras = lazy(() => import("./pages/pageData/Compras"));
 const Blog = lazy(() => import("./pages/pageData/Blog"));
+const Contacto = lazy(() => import("./pages/pageData/Contacto"));
+const Cookies = lazy(() => import("./pages/pageData/Cookies"));
+const Preguntas = lazy(() => import("./pages/pageData/Preguntas"));
 
 function App() {
   // Animations
@@ -76,12 +79,36 @@ function App() {
             </Suspense>
           }
         />
-        <Route path="/" element={<Home />} />
+        {/* <Route path="/" element={<Home />} /> */}
         <Route
           path="/blog"
           element={
             <Suspense fallback={<LoadingSpinner delay={200} />}>
               <Blog />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/contacto"
+          element={
+            <Suspense fallback={<LoadingSpinner delay={200} />}>
+              <Contacto />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/cookies"
+          element={
+            <Suspense fallback={<LoadingSpinner delay={200} />}>
+              <Cookies />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/preguntas"
+          element={
+            <Suspense fallback={<LoadingSpinner delay={200} />}>
+              <Preguntas />
             </Suspense>
           }
         />

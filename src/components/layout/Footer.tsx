@@ -12,18 +12,16 @@ function Footer() {
   };
   // Enlaces columna 2 *Ayuda*
   const enlaces2 = {
-    Preguntas: "/preguntas",
     Contáctanos: "/contacto",
-    "Política de cookies": "/politica_cookies",
-    "Términos de uso": "/terminos_uso",
-    "Preguntas frecuentes": "/preguntas_frecuentes",
+    "Política de cookies": "/cookies",
+    "Preguntas frecuentes": "/preguntas",
   };
   // Enlaces columna 3 *Educación*
   const enlaces3 = {
-    "Educación financiera": "/educacion_financiera",
-    "Inversiones inteligentes": "/inversiones_inteligentes",
-    "Ahorro y presupuesto": "/ahorro_y_presupuesto",
-    "Criptomonedas y blockchain": "/criptomonedas_y_blockchain",
+    "Educación financiera": "#",
+    "Inversiones inteligentes": "/inversiones",
+    "Ahorro y presupuesto": "#",
+    "Criptomonedas y blockchain": "#",
   };
 
   return (
