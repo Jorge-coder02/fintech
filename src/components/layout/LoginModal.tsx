@@ -67,7 +67,7 @@ export const LoginModal = ({
     };
 
     // Validar datos del formulario
-    if (!state.email || !state.password) {
+    if (!datosUser.email || !datosUser.password) {
       setError("Por favor, completa todos los campos.");
       return;
     }
@@ -78,17 +78,17 @@ export const LoginModal = ({
     setError("");
 
     // 👤 Petición POST al backend
-    const response = await api.post(`/api/login`, datosUser);
-    // ✅ Manejo de éxito
-    console.log("Login exitoso:", response.data);
-    if (response.status === 200) {
-      setSuccess(true);
-    }
-
-    // ❌ Manejo de errores
-    if (response.status !== 200) {
-      const error = response.data.error;
-      setError(error);
+    try {
+      const response = await api.post(`/api/login`, datosUser);
+      console.log("Login exitoso:", response.data);
+      // ✅ Manejo de éxito
+      if (response.status === 200) {
+        setSuccess(true);
+      }
+    } catch (error) {
+      // ❌ Manejo de error
+      console.error("Error al iniciar sesión:", error);
+      setError("Error al iniciar sesión. Por favor, intenta de nuevo.");
     }
   };
 
