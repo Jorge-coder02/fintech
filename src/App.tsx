@@ -4,12 +4,12 @@ import "./index.css";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Estilos de AOS
 import LoadingSpinner from "./components/ui/Icons/Tools/LoadingSpinner";
-
 import CustomScrollRestoration from "./utility/CustomScrollRestoration";
 
 // Pages
 import PageTitleUpdater from "./utility/PageTitleUpdater";
 import Home from "./pages/Home";
+
 // Generic pages (lazy loading)
 const About = lazy(() => import("./pages/pageData/About"));
 const Servicios = lazy(() => import("./pages/pageData/Servicios"));
@@ -19,6 +19,9 @@ const Blog = lazy(() => import("./pages/pageData/Blog"));
 const Contacto = lazy(() => import("./pages/pageData/Contacto"));
 const Cookies = lazy(() => import("./pages/pageData/Cookies"));
 const Preguntas = lazy(() => import("./pages/pageData/Preguntas"));
+const Educacion = lazy(() => import("./pages/pageData/Educacion"));
+const Ahorro = lazy(() => import("./pages/pageData/Ahorro"));
+const Criptomonedas = lazy(() => import("./pages/pageData/Criptomonedas"));
 
 function App() {
   // Animations
@@ -109,6 +112,30 @@ function App() {
           element={
             <Suspense fallback={<LoadingSpinner delay={200} />}>
               <Preguntas />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/educacion"
+          element={
+            <Suspense fallback={<LoadingSpinner delay={200} />}>
+              <Educacion />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/ahorro"
+          element={
+            <Suspense fallback={<LoadingSpinner delay={200} />}>
+              <Ahorro />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/criptomonedas"
+          element={
+            <Suspense fallback={<LoadingSpinner delay={200} />}>
+              <Criptomonedas />
             </Suspense>
           }
         />

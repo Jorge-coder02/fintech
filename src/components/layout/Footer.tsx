@@ -18,10 +18,10 @@ function Footer() {
   };
   // Enlaces columna 3 *Educación*
   const enlaces3 = {
-    "Educación financiera": "#",
+    "Educación financiera": "/educacion",
     "Inversiones inteligentes": "/inversiones",
-    "Ahorro y presupuesto": "#",
-    "Criptomonedas y blockchain": "#",
+    "Ahorro y presupuesto": "/ahorro",
+    "Criptomonedas y blockchain": "/criptomonedas",
   };
 
   return (
