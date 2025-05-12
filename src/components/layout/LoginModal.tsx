@@ -1,9 +1,9 @@
 import Button from "../ui/Buttons/Button.styles";
 import LoadingSpinner from "../ui/Icons/Tools/LoadingSpinner";
 import { useReducer, useState } from "react";
-import axios from "axios";
+import api from "../../api/client.ts"; // Importa la función api desde
 
-const VITE_BACKEND_URL = import.meta.env.VITE_BACKEND_URL || "localhost:5000";
+// const VITE_BACKEND_URL = import.meta.env.VITE_BACKEND_URL || "localhost:5000";
 
 // *Reducer para manejar el estado del formulario
 const initialState = {
@@ -59,7 +59,7 @@ export const LoginModal = ({
   // }
   // }, [isOpen]);
 
-  const handleFormulario = () => {
+  const handleFormulario = async () => {
     // Recoger datos del formulario
     const datosUser = {
       email: state.email,
@@ -72,54 +72,24 @@ export const LoginModal = ({
       return;
     }
 
-    // 👤 Petición POST al backend
+    // 🔄 Reseteos
     setLoading(true);
     setSuccess(false);
     setError("");
-    axios
-      .post(`${VITE_BACKEND_URL}/api/login`, datosUser)
-      // ✅ Manejo de éxito
-      .then((response) => {
-        console.log("Inicio de sesión exitoso:");
-        const token = response.data.token; // guardo el token
-        if (token) {
-          console.log("Token:", token);
-          // Guardar el token en el *estado global* o en el localStorage
-          localStorage.setItem("token", response.data.token);
-          localStorage.removeItem("token"); // eliminar token anterior
-        }
 
-        setSuccess(true);
-      })
-      // ❌ Manejo de errores
-      .catch((error) => {
-        if (error.response) {
-          const errorMessage = error.response.data.error; // guardo mensaje de error del backend
-          // Posibles errores
-          switch (error.response.status) {
-            case 401:
-              setError(errorMessage);
-              break;
-            case 400:
-              setError("Datos inválidos: " + error.response.data.message);
-              break;
-            case 500:
-              setError("Error en el servidor. Inténtalo más tarde");
-              break;
-            default:
-              setError("Error desconocido: " + error.message);
-          }
-        } else if (error.request) {
-          // La petición se hizo pero no hubo respuesta
-          setError("No se recibió respuesta del servidor");
-        } else {
-          // Error al configurar la petición
-          setError("Error de conexión: " + error.message);
-        }
-      })
-      .finally(() => {
-        setLoading(false);
-      });
+    // 👤 Petición POST al backend
+    const response = await api.post(`/api/login`, datosUser);
+    // ✅ Manejo de éxito
+    console.log("Login exitoso:", response.data);
+    if (response.status === 200) {
+      setSuccess(true);
+    }
+
+    // ❌ Manejo de errores
+    if (response.status !== 200) {
+      const error = response.data.error;
+      setError(error);
+    }
   };
 
   // VISUAL
