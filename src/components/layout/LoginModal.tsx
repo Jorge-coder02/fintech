@@ -89,6 +89,8 @@ export const LoginModal = ({
       // ❌ Manejo de error
       console.error("Error al iniciar sesión:", error);
       setError("Error al iniciar sesión. Por favor, intenta de nuevo.");
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -142,7 +144,7 @@ export const LoginModal = ({
             </Button>
           </div>
         </form>
-        <div className="">
+        <div className="w-24 h-24">
           {loading && (
             <div className="flex justify-center items-center mt-4">
               <LoadingSpinner />
