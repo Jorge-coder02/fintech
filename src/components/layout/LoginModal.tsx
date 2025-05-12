@@ -65,7 +65,6 @@ export const LoginModal = ({
       email: state.email,
       password: state.password,
     };
-    console.log("Datos al backend:", datosUser);
 
     // Validar datos del formulario
     if (!state.email || !state.password) {
