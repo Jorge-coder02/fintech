@@ -144,9 +144,9 @@ export const LoginModal = ({
             </Button>
           </div>
         </form>
-        <div className="w-24 h-24">
+        <div className="">
           {loading && (
-            <div className="flex justify-center items-center mt-4">
+            <div className="flex justify-center items-center mt-4 w-24 h-24 mx-auto">
               <LoadingSpinner />
             </div>
           )}
