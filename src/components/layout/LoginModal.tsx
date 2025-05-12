@@ -3,7 +3,7 @@ import LoadingSpinner from "../ui/Icons/Tools/LoadingSpinner";
 import { useReducer, useState } from "react";
 import axios from "axios";
 
-const VITE_BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+const VITE_BACKEND_URL = import.meta.env.VITE_BACKEND_URL || "localhost:5000";
 
 // *Reducer para manejar el estado del formulario
 const initialState = {
